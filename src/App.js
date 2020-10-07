@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Video from "./tesla.mp4";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div style={{border: '5px solid red', maxWidth:295}}>
+      <h1> Majed bejaoui</h1>
+      <br/>
+    <img src="/imageInPublic.jpg" alt="123456" />
+    <br/>
+   
+
+
+<video controls autostart autoPlay src={Video} width={320} height={240} type="video/mp4" />
+</div>
   );
 }
 
